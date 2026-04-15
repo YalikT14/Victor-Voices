@@ -1,0 +1,215 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Variables de color */
+:root {
+  --color-black: #000000;
+  --color-background: #e9eff3;
+  --color-highlight: #0050e6;
+  --color-button: #e80054;
+  --color-button-text: #e9eff3;
+}
+
+/* Reset y configuración general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color: var(--color-black);
+  background-color: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-black) !important;
+  padding: 1rem 0;
+}
+
+.navbar-brand img {
+  max-height: 125px;
+}
+
+.nav-link {
+  color: var(--color-background) !important;
+  margin: 0 1rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-highlight) !important;
+}
+
+.contact-email {
+  color: var(--color-background) !important;
+  text-decoration: none;
+}
+
+.highlight {
+  color: var(--color-highlight);
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--color-background);
+  padding: 4rem 0;
+}
+
+.min-vh-80 {
+  min-height: 80vh;
+}
+
+.hero-content .greeting {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.hero-content .name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.hero-content .subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--color-black);
+}
+
+.audio-player audio {
+  width: 100%;
+  max-width: 400px;
+}
+
+.btn-cta {
+  background-color: var(--color-button);
+  color: var(--color-button-text);
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-cta:hover {
+  background-color: #c70045;
+  color: var(--color-button-text);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(232, 0, 84, 0.3);
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  border: 5px solid var(--color-black);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Buttons Section */
+.nav-buttons-section {
+  background-color: var(--color-background);
+  padding: 4rem 0;
+}
+
+.btn-nav-section {
+  background-color: transparent;
+  color: var(--color-black);
+  border: 3px solid var(--color-black);
+  padding: 1.5rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-nav-section:hover {
+  background-color: var(--color-black);
+  color: var(--color-background);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-black);
+  color: var(--color-background);
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.social-icons a {
+  color: var(--color-background);
+  font-size: 1.8rem;
+  margin: 0 0.8rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: var(--color-highlight);
+}
+
+/* Page Section */
+.page-section {
+  background-color: var(--color-background);
+  min-height: 60vh;
+  padding: 4rem 0;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content .name {
+    font-size: 2.5rem;
+  }
+
+  .hero-content .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .btn-cta {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  .btn-nav-section {
+    padding: 1.2rem 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+  }
+}

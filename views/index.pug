@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  // Hero Section
+  section.hero-section
+    .container
+      .row.align-items-center.min-vh-80
+        .col-lg-6.mb-4.mb-lg-0
+          .hero-content
+            p.greeting ¡HOLA! Soy
+            h1.name Victor Ruiz
+            h2.subtitle VOICE OVER TALENT
+            .audio-player.my-4
+              audio(controls)
+                source(src="/audio/demo.mp3" type="audio/mpeg")
+                | Tu navegador no soporta el elemento de audio.
+            a.btn.btn-cta(href="https://wa.me/593999999999" target="_blank" rel="noopener noreferrer") HABLEMOS
+        .col-lg-6.text-center
+          .hero-image
+            img.rounded-circle(src="/images/VICTOR PERFIL.jpg" alt="Victor Ruiz")
+
+  // Navigation Buttons Section
+  section.nav-buttons-section
+    .container
+      .row.g-4.justify-content-center
+        .col-md-4
+          a.btn.btn-nav-section(href="/demos") DEMOS
+        .col-md-4
+          a.btn.btn-nav-section(href="/trabajos-previos") TRABAJOS PREVIOS
+        .col-md-4
+          a.btn.btn-nav-section(href="/sobre-mi") SOBRE MÍ
