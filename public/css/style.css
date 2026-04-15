@@ -1,5 +1,53 @@
-/* Importar fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+/* Declaración de fuentes personalizadas */
+@font-face {
+  font-family: 'Centrale Sans';
+  src: url('/fonts/Centrale Sans Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera Round Pro';
+  src: url('/fonts/Typemates Cera Round Pro Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera Round Pro';
+  src: url('/fonts/Typemates Cera Round Pro Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera Round Pro';
+  src: url('/fonts/Typemates Cera Round Pro Regular.otf')
+    format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera Round Pro';
+  src: url('/fonts/Typemates Cera Round Pro Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera Round Pro';
+  src: url('/fonts/Typemates Cera Round Pro Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera Round Pro';
+  src: url('/fonts/Typemates Cera Round Pro Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
 
 /* Variables de color */
 :root {
@@ -18,7 +66,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Centrale Sans', sans-serif;
   font-weight: 300;
   color: var(--color-black);
   background-color: var(--color-background);
@@ -30,8 +78,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-family: 'Cera Round Pro', sans-serif;
+  font-weight: 700;
 }
 
 /* Navbar */
@@ -41,12 +89,13 @@ h6 {
 }
 
 .navbar-brand img {
-  max-height: 125px;
+  max-height: 50px;
 }
 
 .nav-link {
   color: var(--color-background) !important;
   margin: 0 1rem;
+  font-family: 'Cera Round Pro', sans-serif;
   font-weight: 400;
   transition: color 0.3s ease;
 }
@@ -58,6 +107,7 @@ h6 {
 .contact-email {
   color: var(--color-background) !important;
   text-decoration: none;
+  font-family: 'Cera Round Pro', sans-serif;
 }
 
 .highlight {
@@ -75,21 +125,24 @@ h6 {
 }
 
 .hero-content .greeting {
+  font-family: 'Cera Round Pro', sans-serif;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   font-weight: 400;
 }
 
 .hero-content .name {
+  font-family: 'Cera Round Pro', sans-serif;
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 0.5rem;
   line-height: 1.2;
 }
 
 .hero-content .subtitle {
+  font-family: 'Cera Round Pro', sans-serif;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 2rem;
   color: var(--color-black);
 }
@@ -100,11 +153,12 @@ h6 {
 }
 
 .btn-cta {
+  font-family: 'Cera Round Pro', sans-serif;
   background-color: var(--color-button);
   color: var(--color-button-text);
   padding: 1rem 3rem;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
   border-radius: 50px;
   transition: all 0.3s ease;
@@ -133,12 +187,13 @@ h6 {
 }
 
 .btn-nav-section {
+  font-family: 'Cera Round Pro', sans-serif;
   background-color: transparent;
   color: var(--color-black);
   border: 3px solid var(--color-black);
   padding: 1.5rem 2rem;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 10px;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -182,6 +237,7 @@ h6 {
 }
 
 .page-title {
+  font-family: 'Cera Round Pro', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -211,5 +267,231 @@ h6 {
   .social-icons a {
     font-size: 1.5rem;
     margin: 0 0.5rem;
+  }
+}
+
+/* ============================================
+   DEMOS SECTION
+   ============================================ */
+
+.demos-section {
+  background-color: var(--color-background);
+  padding: 4rem 0;
+  min-height: 80vh;
+}
+
+.demo-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.demo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.demo-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--color-black);
+}
+
+.audio-player-container {
+  width: 100%;
+}
+
+.demo-audio {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ============================================
+   DOBLAJE SECTION (Trabajos Previos)
+   ============================================ */
+
+.doblaje-section {
+  background-color: var(--color-background);
+  padding: 4rem 0;
+  min-height: 80vh;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--color-black);
+  margin-top: 1rem;
+}
+
+.video-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.video-card iframe {
+  border: none;
+}
+
+/* ============================================
+   ABOUT SECTION (Sobre Mí)
+   ============================================ */
+
+.about-section {
+  background-color: var(--color-background);
+  padding: 4rem 0;
+}
+
+.about-image-container {
+  position: relative;
+}
+
+.about-image-container img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+  padding: 0 1rem;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  color: var(--color-black);
+  text-align: justify;
+}
+
+/* ============================================
+   STUDIO SECTION
+   ============================================ */
+
+.studio-section {
+  background-color: white;
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 2rem;
+}
+
+.studio-card {
+  background-color: var(--color-background);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.studio-card:hover {
+  transform: translateY(-5px);
+}
+
+.studio-subtitle {
+  font-size: 0.9rem;
+  color: var(--color-highlight);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.studio-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 0;
+}
+
+/* Carrusel del Estudio */
+#studioCarousel {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#studioCarousel .carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#studioCarousel .carousel-control-prev,
+#studioCarousel .carousel-control-next {
+  width: 10%;
+}
+
+#studioCarousel .carousel-control-prev-icon,
+#studioCarousel .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+#studioCarousel .carousel-indicators button {
+  background-color: var(--color-highlight);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+#studioCarousel .carousel-indicators button.active {
+  background-color: var(--color-button);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .demo-card {
+    padding: 1.5rem;
+  }
+
+  .demo-title {
+    font-size: 1.3rem;
+  }
+
+  .about-content p {
+    text-align: left;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .studio-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .demo-title {
+    font-size: 1.2rem;
+  }
+
+  .studio-card {
+    padding: 1.5rem;
   }
 }

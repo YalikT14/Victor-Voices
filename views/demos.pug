@@ -1,9 +1,33 @@
 extends layout
 
 block content
-  section.page-section
+  section.demos-section
     .container
-      .row
+      .row.justify-content-center
         .col-12
           h1.page-title Demos
-          p.text-center Contenido próximamente...
+        
+        .col-lg-8
+          // Demo Comercial
+          .demo-card
+            h3.demo-title Demo Comercial
+            .audio-player-container
+              audio.demo-audio(controls)
+                source(src="/audio/demo-comercial.mp3" type="audio/mpeg")
+                | Tu navegador no soporta el elemento de audio.
+          
+          // TV Bumpers
+          .demo-card
+            h3.demo-title TV Bumpers
+            .audio-player-container
+              audio.demo-audio(controls)
+                source(src="/audio/tv-bumpers.mp3" type="audio/mpeg")
+                | Tu navegador no soporta el elemento de audio.
+          
+          // Promo Ben 10
+          .demo-card
+            h3.demo-title Promo Ben 10
+            .audio-player-container
+              audio.demo-audio(controls)
+                source(src="/audio/promo-ben10.mp3" type="audio/mpeg")
+                | Tu navegador no soporta el elemento de audio.

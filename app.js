@@ -24,6 +24,10 @@ app.get('/trabajos-previos', (req, res) => {
   res.render('trabajos', { title: 'Trabajos Previos - Victor Ruiz' });
 });
 
+app.get('/doblaje', (req, res) => {
+  res.render('doblaje', { title: 'Doblaje - Victor Ruiz' });
+});
+
 app.get('/sobre-mi', (req, res) => {
   res.render('sobre-mi', { title: 'Sobre Mí - Victor Ruiz' });
 });

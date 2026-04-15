@@ -1,9 +1,76 @@
 extends layout
 
 block content
-  section.page-section
+  // Sección Biografía
+  section.about-section
     .container
       .row
         .col-12
-          h1.page-title Sobre Mí
-          p.text-center Contenido próximamente...
+          h1.page-title Sobre mí
+      
+      .row.align-items-center.mt-4
+        .col-lg-5.mb-4.mb-lg-0
+          .about-image-container
+            img.img-fluid.rounded(src="/images/about.png" alt="Victor Ruiz")
+        
+        .col-lg-7
+          .about-content
+            p Nacido en Ciudad Guayana, Venezuela, a los 16 años empezó su formación como talento de voz con diversos cursos y workshops de locución comercial y producción y locución radial.
+            
+            p A los 18 años en 2014 empezó a trabajar en radio regional y a los pocos meses pasó a trabajar como locutor y productor en una de las emisoras Top 40 pop/rock más importantes de Venezuela en la frecuencia de su ciudad La Mega 88.9 FM perteneciente a la cadena radial Unión Radio.
+            
+            p Tras culminar sus estudios universitarios en Comunicación Social en 2017 termina su etapa como locutor y productor radial para La Mega y migra a Quito, Ecuador donde actualmente radica.
+            
+            p Movido por el doblaje y la actuación inicia estudios en teatro dramático en 2018 junto a una variedad de cursos y capacitaciones sobre doblaje, locución comercial y manejo de la voz.
+            
+            p Ese mismo año junto a su novia crean el proyecto Caja de Voces con el fin de incentivar el doblaje en Ecuador.
+            
+            p En 2019 viaja al Festival Viva Voz y resulta ganador en la Categoría Estudiante del premio a Mejor Voz Masculina en Doblaje Latino en los Premios Viva Voz.
+            
+            p En el mismo certamen también queda nominado en la categoría estudiante para Mejor Locución Comercial Masculina.
+            
+            p En 2020 consigue su primera campaña en Ecuador llamada #CuidarnosEsLoImportante para el Ministerio de Salud Pública donde grabó varios spots de concienciación sobre la COVID-19.
+            
+            p En 2021 hace su debut en doblaje grabando a distancia voces de ambiente para el doblaje al español latinoamericano de la serie israelí Valley Of Tears para HBO Max.
+            
+            p Consecuentemente a lo largo del año ha continuado grabando doblaje a distancia para diversas empresas.
+            
+            a.btn.btn-cta.mt-3(href="https://wa.me/593999999999" target="_blank" rel="noopener noreferrer") HABLEMOS
+
+  // Sección Mi Estudio
+  section.studio-section
+    .container
+      .row
+        .col-12
+          h2.section-title.text-center Mi Estudio
+      
+      .row.justify-content-center.align-items-center.mt-5
+        .col-lg-5.col-md-6.mb-4.mb-lg-0
+          .studio-card
+            p.studio-subtitle Microfonía
+            h3.studio-title Sennheiser MK4
+          .studio-card.mt-4
+            p.studio-subtitle Interfaz
+            h3.studio-title Focusrite Scarlett 2i2 3rd Gen
+          .studio-card.mt-4
+            p.studio-subtitle Software
+            h3.studio-title AVID Pro Tools
+        
+        .col-lg-5.col-md-6
+          #studioCarousel.carousel.slide(data-bs-ride="carousel")
+            .carousel-indicators
+              button.active(type="button" data-bs-target="#studioCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1")
+              button(type="button" data-bs-target="#studioCarousel" data-bs-slide-to="1" aria-label="Slide 2")
+            
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.w-100.rounded(src="/images/micro.png" alt="Micrófono Sennheiser MK4")
+              .carousel-item
+                img.d-block.w-100.rounded(src="/images/interfaz.png" alt="Interfaz Focusrite Scarlett")
+            
+            button.carousel-control-prev(type="button" data-bs-target="#studioCarousel" data-bs-slide="prev")
+              span.carousel-control-prev-icon(aria-hidden="true")
+              span.visually-hidden Previous
+            button.carousel-control-next(type="button" data-bs-target="#studioCarousel" data-bs-slide="next")
+              span.carousel-control-next-icon(aria-hidden="true")
+              span.visually-hidden Next
